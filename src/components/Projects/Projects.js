@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import expense from "../../Assets/Projects/expense.jpg";
 import portfolio from "../../Assets/Projects/codeEditor.png";
 import crud from "../../Assets/Projects/crud.jpg";
+import TicTacToe from "../../Assets/Projects/TicTacToe.png";
 
 function Projects() {
   return (
@@ -34,9 +35,20 @@ function Projects() {
               imgPath={portfolio}
               isBlog={false}
               title="Portfolio - Current Site"
-              description="Once can know about me from here."
+              description="One can know about me from here."
               ghLink="https://github.com/SagarVakharia/My-Portfolio"
               demoLink="https://my-portfolio-theta-six-34.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TicTacToe}
+              isBlog={false}
+              title="Tic=Tac-Toe"
+              description="Whenever you get bored just click here for a fun game."
+              ghLink="https://github.com/SagarVakharia/Tic-Tac-Toe"
+              demoLink="https://tic-tac-toe-vert-kappa.vercel.app/"
             />
           </Col>
 
