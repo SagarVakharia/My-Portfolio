@@ -6,6 +6,7 @@ import expense from "../../Assets/Projects/expense.jpg";
 import portfolio from "../../Assets/Projects/codeEditor.png";
 import crud from "../../Assets/Projects/crud.jpg";
 import TicTacToe from "../../Assets/Projects/TicTacToe.png";
+import weather from '../../Assets/Projects/Weather.png'
 
 function Projects() {
   return (
@@ -19,6 +20,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={weather}
+              isBlog={false}
+              title="Weather App"
+              description="You can check weather of any city. Can be helpful when you are traveling to a city and want to know what type of weather is there."
+              ghLink="https://github.com/SagarVakharia/Weather"
+              demoLink="https://weather-liard-tau.vercel.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={expense}
